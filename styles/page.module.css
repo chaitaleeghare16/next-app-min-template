@@ -51,5 +51,6 @@
     stroke-width: 1.5;
   }
  
-  
-    
+  .custom_link{
+    color: var(--mantine-color-dimmed)
+  }
