@@ -1,11 +1,29 @@
+
 import "@mantine/core/styles.css";
 import React from "react";
-import { MantineProvider, ColorSchemeScript } from "@mantine/core";
+import { MantineProvider, ColorSchemeScript, Container } from "@mantine/core";
 import { theme } from "../theme";
+
+declare global {
+  namespace JSX {
+    interface IntrinsicElements {
+      [elemName: string]: any;
+    }
+  }
+}
 
 export const metadata = {
   title: "Mantine Next.js template",
   description: "I am using Mantine with Next.js!",
+};
+
+const containerProps = {
+  p:0,
+  mt:"lg",
+  mb:"lg",
+  ml:"lg",
+  mr:"lg"
+  
 };
 
 export default function RootLayout({ children }: { children: any }) {
@@ -20,7 +38,15 @@ export default function RootLayout({ children }: { children: any }) {
         />
       </head>
       <body>
-        <MantineProvider theme={theme}>{children}</MantineProvider>
+        <MantineProvider theme={theme}>
+        <Container fluid {...containerProps}>
+             
+                  {children}
+        </Container>
+            
+             
+         
+          </MantineProvider>
       </body>
     </html>
   );

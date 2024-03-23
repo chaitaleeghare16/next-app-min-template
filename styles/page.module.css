@@ -1,0 +1,55 @@
+
+.user_avatar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  .user_name{
+   
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 15px;
+   
+   
+  }
+  .user_info_div{
+    margin-top: 5px;
+  }
+  .user_info{
+    
+    display: flex;  
+    gap:5px;
+    align-items: center;
+    margin-top: -2px;
+   
+  }
+  
+  .buttons{
+   
+    margin-top: 10px;
+    display: flex; 
+    gap:5px;
+    
+   
+  }
+  
+  .buttons Button{
+    
+    flex: 1 1 50%;
+    display: flex;
+    justify-content: center;
+    
+  }
+  
+  .tabler_icon{
+    color: gray;
+    width: 16px;
+    height: 32px;
+    stroke-width: 1.5;
+  }
+ 
+  
+    
